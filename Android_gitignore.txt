@@ -1,0 +1,19 @@
+
+# Android/Gradle/IDE
+.gradle/
+local.properties
+/.idea
+*.iml
+/.cxx/
+/.externalNativeBuild/
+/build/
+/captures/
+/outputs/
+/navigation.json
+
+# OS / misc
+.DS_Store
+Thumbs.db
+*.keystore
+*.jks
+*.zip

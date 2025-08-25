@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This layout stacks elements vertically from top to bottom -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- This is where the user (like me!) types their name -->
+
+    <!-- This is the button I’ll tap to be greeted – it starts disabled -->
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name" />
+
+    <Button
+        android:id="@+id/buttonSayHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Say Hello"
+        android:layout_marginTop="16dp"
+        android:enabled="false"
+        android:onClick="SayHello" />
+
+    <!-- This TextView will show my greeting once I press the button -->
+    <TextView
+        android:id="@+id/textGreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="24dp"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonOpenGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Grid View"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/buttonOpenSms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open SMS View"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
